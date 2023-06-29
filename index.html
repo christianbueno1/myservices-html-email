@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Bueno</title>
+</head>
+<style>
+    .default {
+        background-color: rgb(59, 135, 202);
+    }
+    .logo {
+        width: 120px;
+    }
+    .myimg {
+        width: 100%;
+
+    }
+    .container_body {
+        margin: auto;
+        background-color: azure;
+    }
+    body {
+        display: grid;
+        /* font-family: sans-serif; */
+        /* font-family: "Tahoma", sans-serif; */
+        /* font-family: "Verdana", sans-serif; */
+        font-family: sans-serif;
+    }
+    /* BEM
+    my_card 
+    my_card__img
+    my_card__title
+    my_card__price
+    my_card__description
+    my_card__btn--big
+    my_card__btn--orange*/
+    .mynav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .web {
+        text-align: center;
+    }
+    .brandname {
+        margin-right: 5rem;
+        /* font-weight: lighter; */
+        font-weight: bold;
+        font-size: 3rem;
+
+    }
+    .hero {
+        width: 400px;
+    }
+    .mylink {
+        color: rgb(29, 141, 206);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .services {
+        display: flex;
+        width: 800px;
+        flex-wrap: wrap;
+    }
+    .myimg_services {
+        /* flex: 1; */
+        width: 350px;
+        margin: 1rem 1rem;
+        object-fit: contain;
+    }
+    .callme {
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="container_body">
+        <nav class="mynav">
+            <div class="logo">
+                <img class="myimg" src="./cb-terminal-logo.png" alt="the logo">
+            </div>
+            <div class="brandname">
+                <div>Christian Bueno</div>
+                <div>Desarrollo Web</div>
+            </div>
+        </nav>
+        <div class="web">
+            <h1>
+                <a class="mylink" href="https://christianbueno.work">www.christianbueno.work</a>
+
+            </h1>
+        </div>
+        <div class="services">
+            <img class="myimg_services" src="web.png" alt="servicios web">
+            <img class="myimg_services" src="ssl.png" alt="seguridad web">
+            <img class="myimg_services" src="seo.png" alt="servicios de seo">
+            <img class="myimg_services" src="thanks.png" alt="trabajos realizados">
+            <img class="myimg_services" src="iam.png" alt="informacion personal">
+            <img class="myimg_services" src="services.png" alt="mis servicios">
+            <img class="myimg_services" src="diseno1.png" alt="ejemplo de diseno 1">
+            <img class="myimg_services" src="diseno2.png" alt="ejemplo de diseno 2">
+            <img class="myimg_services" src="diseno3.png" alt="ejemplo de diseno 3">
+            <img class="myimg_services" src="diseno4.png" alt="ejemplo de diseno 4">
+            <img class="myimg_services" src="diseno5.png" alt="ejemplo de diseno 5">
+            
+        </div>
+        <div class="callme">
+            <div>+593 99 028 8710</div>
+            <div>Christian Bueno</div>
+            <div>Desarrollador Web</div>
+        </div>
+
+    </div>
+</body>
+</html>
