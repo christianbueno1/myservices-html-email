@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Bueno</title>
-</head>
-<style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Christian Bueno</title>
+    </head>
+    <style>
+    * {
+
+        padding: 0;
+        text-decoration: none;
+        margin: 0;
+    }
     .default {
         background-color: rgb(59, 135, 202);
     }
     .logo {
-        width: 120px;
+        width: min(70%, 120px);
     }
     .myimg {
         width: 100%;
 
     }
     .container_body {
-        margin: auto;
+        /* margin: auto; */
         background-color: azure;
     }
     body {
-        display: grid;
         /* font-family: sans-serif; */
         /* font-family: "Tahoma", sans-serif; */
         /* font-family: "Verdana", sans-serif; */
         font-family: sans-serif;
+
     }
     /* BEM
     my_card 
@@ -42,38 +48,64 @@
     .web {
         text-align: center;
     }
+    
     .brandname {
         /* margin-right: 5rem; */
         /* font-weight: lighter; */
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 2rem;
         flex: 1;
         text-align: center;
     }
-    .hero {
-        width: 400px;
-    }
     .mylink {
-        color: rgb(29, 141, 206);
-        text-decoration: none;
-        text-transform: uppercase;
+        color: rgb(30, 104, 146);
+        font-size: 8vw;
     }
     .services {
-        display: flex;
-        width: 800px;
-        flex-wrap: wrap;
+        padding: 0 1rem;
     }
     .myimg_services {
-        /* flex: 1; */
-        width: 350px;
-        margin: 1rem 1rem;
-        object-fit: contain;
+        width: 100%;
+
     }
     .callme {
         font-size: 3rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        font-weight: bold;
+        text-align: center;
+    }
+    .callme_phone {
+        color: rgb(34, 137, 168);
+    }
+    @media screen and (min-width: 620px) {
+        .container_body {
+            margin: auto;
+        }
+        .brandname {
+            font-size: 7vw;
+        }
+        .mylink {
+            font-size: 7vw;
+            
+        }
+        .services {
+            display: grid;
+            /* 14,21 */
+            grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+            grid-gap: 1rem;
+        }
+        
+    }
+    @media screen and (min-width: 1180px) {
+        .container_body {
+            margin: auto;
+            width: 1180px;
+        }
+        .mylink {
+            font-size: 5.5rem;
+            
+        }
+        
+
     }
 </style>
 <body>
@@ -89,10 +121,9 @@
             </div>
         </nav>
         <div class="web">
-            <h1>
+            <div>
                 <a class="mylink" href="https://christianbueno.work">www.christianbueno.work</a>
-
-            </h1>
+            </div>
         </div>
         <div class="services">
             <img class="myimg_services" src="https://github.com/christianbueno1/myservices-html-email/blob/main/web.png?raw=true" alt="servicios web">
@@ -109,7 +140,7 @@
             
         </div>
         <div class="callme">
-            <div>+593 99 028 8710</div>
+            <div class="callme_phone">+593 99 028 8710</div>
             <div>Christian Bueno</div>
             <div>Desarrollador Web</div>
         </div>
