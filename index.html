@@ -69,7 +69,7 @@
 
     }
     .callme {
-        font-size: 3rem;
+        font-size: 9vw;
         font-weight: bold;
         text-align: center;
     }
@@ -83,6 +83,9 @@
         .brandname {
             font-size: 7vw;
         }
+        .brandname_fullname {
+            margin-bottom: -1.5rem;
+        }
         .mylink {
             font-size: 7vw;
             
@@ -93,6 +96,9 @@
             grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
             grid-gap: 1rem;
         }
+        .callme {
+            font-size: 6vw;
+        }
         
     }
     @media screen and (min-width: 1180px) {
@@ -100,9 +106,15 @@
             margin: auto;
             width: 1180px;
         }
+        .brandname {
+            font-size: 5rem;
+        }
         .mylink {
-            font-size: 5.5rem;
+            font-size: 4rem;
             
+        }
+        .callme {
+            font-size: 3rem;
         }
         
 
@@ -116,7 +128,7 @@
 
             </div>
             <div class="brandname">
-                <div>Christian Bueno</div>
+                <div class="brandname_fullname">Christian Bueno</div>
                 <div>Desarrollo Web</div>
             </div>
         </nav>
