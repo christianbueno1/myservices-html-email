@@ -11,3 +11,11 @@ sudo emerge -a mail-client/mailx  #[On Gentoo Linux]
 sudo pacman -S mailutils          #[On Arch Linux]
 sudo zypper install mailutils     #[On OpenSUSE]  
 ```
+
+# Notes
+```
+# image
+URL?raw=true
+https://github.com/christianbueno1/myservices-html-email/blob/main/cb-terminal-logo.png?raw=true
+
+```
