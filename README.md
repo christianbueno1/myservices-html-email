@@ -19,3 +19,13 @@ URL?raw=true
 https://github.com/christianbueno1/myservices-html-email/blob/main/cb-terminal-logo.png?raw=true
 
 ```
+
+# Deploy
+```
+/var/www/estudiamosec.com/public_html
+
+# updates
+rsync =avz --update ./* server:/var/www/estudiamosec.com/public_html
+# copy
+scp -rp ./index.html server:/var/www/estudiamosec.com/public_html
+```
